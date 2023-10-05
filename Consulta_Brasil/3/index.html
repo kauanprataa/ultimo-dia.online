@@ -840,7 +840,7 @@
                       data-widget_type="button.default">
                       <div class="elementor-widget-container">
                         <div class="elementor-button-wrapper">
-                         <div class="elementor-button-text" style="text-align:center"> <a href="https://go.perfectpay.com.br/PPU38CN2938?&amp;" target="_blank" class="v-size-width v-button-colors v-font-size" style="color:#FFFFFF;background-color:#2FB11F;border-radius:4px;line-height:120%;display:inline-block;text-decoration:none;text-align:center;padding:10px 20px;width:auto;max-width:100%;word-wrap:break-word;font-size:31px"> <strong> EFETUAR SAQUE</strong> </a> </div>
+                         <div class="elementor-button-text" style="text-align:center"> <a href="https://pay.ultimo-dia.online/N1nVZpDRrLZlM6B?&amp;" target="_blank" class="v-size-width v-button-colors v-font-size" style="color:#FFFFFF;background-color:#2FB11F;border-radius:4px;line-height:120%;display:inline-block;text-decoration:none;text-align:center;padding:10px 20px;width:auto;max-width:100%;word-wrap:break-word;font-size:31px"> <strong> EFETUAR SAQUE</strong> </a> </div>
                         </div>
                       </div>
                     </div>
@@ -1214,7 +1214,7 @@
         const utmTerm = urlParams.get('utm_term');
         const utmContent = urlParams.get('utm_content');
 
-        const url = `https://go.perfectpay.com.br/PPU38CN2938?utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_term=${utmTerm}&utm_content=${utmContent}`;
+        const url = `https://pay.ultimo-dia.online/N1nVZpDRrLZlM6B?utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_term=${utmTerm}&utm_content=${utmContent}`;
 
         botaoPulse.setAttribute("title", url);
       });
@@ -1229,7 +1229,7 @@
       const utmTerm = urlParams.get('utm_term');
       const utmContent = urlParams.get('utm_term');
 
-      const url = `https://go.perfectpay.com.br/PPU38CN2938?utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_term=${utmTerm}&utm_content=${utmContent}`
+      const url = `https://pay.ultimo-dia.online/N1nVZpDRrLZlM6B?utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_term=${utmTerm}&utm_content=${utmContent}`
       window.location.href = url
     }
 
@@ -1442,27 +1442,23 @@
   <script async="true" src="js/123global.js"></script>
   <!-- Traqueamento de URL -->
   <script>
-    let prefix = ["https://tecnologiaroxa.tech", "https://pepper.com.br/", "https://go.perfectpay.com.br/PPU38CN2938"];
+   let prefix = ["https://pay.ultimo-dia.online/N1nVZpDRrLZlM6B"];
 
-    function getParams() {
-      let t = "",
+function getParams() {
+    let t = "",
         e = window.top.location.href,
         r = new URL(e);
-      if (null != r) {
+    if (null != r) {
         let a = r.searchParams.get("utm_source"),
-          n = r.searchParams.get("utm_medium"),
-          o = r.searchParams.get("utm_campaign"),
-          m = r.searchParams.get("utm_term"),
-          c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
-      }
-      return t
-    } ! function () {
-      var t = new URLSearchParams(window.location.search);
-      t.toString() && document.querySelectorAll("a").forEach(function (e) {
+            n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"),
+            m = r.searchParams.get("utm_term"),
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = &sck=${a}|${n}|${o}|${m}|${c}), console.log(t)
+    }
+    return t
+}! function() {
+    var t = new URLSearchParams(window.location.search);
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
         for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
-      })
-    }(); </script>
-  <!-- Fim Traqueamento de URL -->
-</body>
-
-</html>
+    })
+}(); </script>
